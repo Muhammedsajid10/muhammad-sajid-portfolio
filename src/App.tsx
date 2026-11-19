@@ -1,5 +1,26 @@
 import { useEffect, useState } from 'react'
-import { ArrowDownRight, ArrowRight, ArrowUpRight, Check, ChevronDown, Code2, ExternalLink, Github, Globe2, Layers3, Linkedin, Mail, MapPin, Menu, MessageCircle, Server, ShieldCheck, Terminal, X } from 'lucide-react'
+
+import {
+  ArrowDownRight,
+  ArrowUpRight,
+  Check,
+  ChevronDown,
+  Code2,
+  ExternalLink,
+  Github,
+  Globe2,
+  Layers3,
+  Linkedin,
+  Mail,
+  MapPin,
+  Menu,
+  MessageCircle,
+  Server,
+  ShieldCheck,
+  Terminal,
+  X
+} from 'lucide-react'
+
 import { projects, skills, type Project } from './data'
 
 const EMAIL = 'sajidalhijas@gmail.com'
