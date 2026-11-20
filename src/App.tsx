@@ -32,13 +32,28 @@ type Filter = typeof filters[number]
 
 function ProjectArtwork({project}:{project:Project}) {
   return <div className={`project-art art-${project.style}`} aria-hidden="true">
-    <div className="art-no">{project.number} / 07</div>
+    <div className="art-no">{project.number} / 08</div>
     {project.id === 'allora' ? <div className="illustration calendar"><div className="cal-header"><span/><span/><span/></div><div className="cal-grid">{Array.from({length:21},(_,i)=><i key={i} className={i===10||i===11||i===17?'selected':''}/>)}</div><div className="cal-tag">APPOINTMENT CONFIRMED <Check size={12}/></div></div>
     : project.id === 'travel' ? <div className="illustration travel-art"><Globe2 size={108} strokeWidth={0.65}/><div className="travel-path"/><div className="travel-label">EXPLORE / BOOK / GO</div></div>
     : project.id === 'workflow' ? <div className="illustration workflow-art"><div className="flow-node"><Check size={19}/> DESIGN</div><div className="flow-node second"><Code2 size={20}/> BUILD</div><div className="flow-node third"><ShieldCheck size={19}/> SHIP</div></div>
     : project.id === 'dukaan' ? <div className="illustration retail-art"><div className="retail-bar"/><div className="retail-cards"><span/><span/><span/></div><div className="retail-stat">₹ <strong>POS</strong></div></div>
     : project.id === 'himate' ? <div className="illustration chat-art"><div className="bubble bubble-one">Hello 👋</div><div className="bubble bubble-two">Connected ●</div><div className="bubble bubble-three">•••</div></div>
     : project.id === 'tahfeel' ? <div className="illustration architecture-art"><div className="arch-line a1"/><div className="arch-line a2"/><div className="arch-line a3"/><div className="arch-line a4"/><div className="arch-word">TAHFEEL</div></div>
+
+: project.id === 'kalyan' ? (
+  <div className="illustration retail-art">
+    <div className="retail-bar" />
+    <div className="retail-cards">
+      <span />
+      <span />
+      <span />
+    </div>
+    <div className="retail-stat">
+      <strong>STOCK</strong>
+    </div>
+  </div>
+)
+
     : <div className="illustration employee-art"><div className="user-orb">●</div><div className="user-lines"><span/><span/><span/></div><div className="shift-label">SHIFT SCHEDULE</div></div>}
     <div className="art-bottom">{project.type.toUpperCase()}</div>
   </div>
@@ -138,7 +153,7 @@ function App(){
       </div>
 
       <div>
-        <span className="metric-figure">07</span>
+        <span className="metric-figure">08</span>
         <span className="metric-caption">
           Projects featured
           <br />
@@ -188,7 +203,7 @@ function App(){
         <div className="timeline-dot" />
 
         <div className="timeline-date">
-          SEP 2024 — PRESENT <span>·</span> KOZHIKODE, INDIA
+          SEP 2024 — NOV 2026 <span>·</span> KOZHIKODE, INDIA
         </div>
 
         <h3>Full-Stack Developer</h3>

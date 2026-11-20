@@ -54,7 +54,35 @@ export const projects: Project[] = [
     summary:'React dashboard for SPA team operations, authentication, attendance and schedules.',
     details:'Companion application for the SPA management project, with employee-focused views and backend integration.',
     stack:['React','Vite','REST API'],url:'https://github.com/Muhammedsajid10/EmployeeSideSpa',number:'07',style:'slate'
-  }
+  },
+
+
+{
+  id: 'kalyan',
+  name: 'Kalyan Engineering',
+  type: 'Product & Inventory Management Backend',
+  category: 'Company',
+
+  summary:
+    'Backend system supporting product management, stock tracking, franchise operations and administrative workflows.',
+
+  details:
+    'Company-developed application using Express.js and MongoDB, with REST APIs for authentication, categories, products, sub-products, inventory and dashboard data.',
+
+  stack: [
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'JWT',
+    'REST API'
+  ],
+
+  url: 'https://github.com/novoxedtechllp-dotcom/kalyanBackEnd',
+
+  number: '08',
+  style: 'blue'
+}
+
 ]
 
 export const skills = [
